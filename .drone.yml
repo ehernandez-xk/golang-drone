@@ -4,6 +4,7 @@ pipeline:
         commands:
         - go build
         - go test
+        - go get
 
     notify:
         image: plugins/slack
