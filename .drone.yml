@@ -5,7 +5,7 @@ pipeline:
         - go build
         - go test
 
-    slack:
+    notify:
         image: plugins/slack
         channel: test-drone
         username: ehernandez
