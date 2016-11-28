@@ -11,6 +11,4 @@ pipeline:
         channel: test-drone
         username: ehernandez
         webhook: https://hooks.slack.com/services/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
-        template: >
-      build #{{ build.number }} finished with a {{ build.status }} status
         icon_emoji: :+1:
