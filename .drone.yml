@@ -5,3 +5,9 @@ pipeline:
         - go build
         - go test
 
+    notify:
+        image: plugins/slack
+        channel: test-drone
+        username: ehernandez
+        webhook: https://hooks.slack.com/services/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
+        icon_emoji: :+1:
