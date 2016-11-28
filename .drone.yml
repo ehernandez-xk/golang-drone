@@ -1,11 +1,11 @@
 pipeline:
-  build:
-    image: golang
-    commands:
-      - go build
-      - go test
+    build:
+        image: golang
+        commands:
+        - go build
+        - go test
 
-    notify:
+    slack:
         image: plugins/slack
         channel: test-drone
         username: ehernandez
