@@ -7,6 +7,14 @@ pipeline:
         - ls
         - pwd
 
+    work:
+        image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/git
+        auth_config:
+            username: AWS-USER
+            password: AWS-PASS
+        commands:
+        - git --version
+
     notify:
         image: plugins/slack
         channel: test-drone
