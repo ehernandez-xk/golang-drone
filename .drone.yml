@@ -11,6 +11,7 @@ pipeline:
         image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/git
         commands:
         - git --version
+        - ls
 
     notify:
         image: plugins/slack
