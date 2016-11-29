@@ -9,4 +9,4 @@ pipeline:
         image: plugins/slack
         channel: test-drone
         username: ehernandez
-        webhook: secret-webhook
+        webhook: https://hooks.slack.com/services/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
