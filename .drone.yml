@@ -12,6 +12,11 @@ pipeline:
         commands:
         - git --version
 
+    maven:
+        image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/maven:3.3.3
+        commands:
+        - mvn --version
+
     notify:
         image: plugins/slack
         channel: test-drone
