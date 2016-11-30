@@ -12,6 +12,12 @@ pipeline:
         commands:
         - git --version
 
+    aemsetup:
+        image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/git
+        commands:
+        - sleep 200
+        - echo "done aem"
+
     maven:
         image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/maven:3.3.3
         commands:
@@ -26,3 +32,5 @@ pipeline:
 services:
     author:
         image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/aem-develop:6.1-jdk7-xcqb3.0.97
+
+
