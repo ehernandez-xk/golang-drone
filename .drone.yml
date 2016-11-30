@@ -4,7 +4,7 @@ pipeline:
         commands:
         - go build
         - go test
-        - ls
+        - go get
         - pwd
 
     work:
@@ -17,7 +17,7 @@ pipeline:
         when:
             branch: [ master ]
         commands:
-        - sleep 200
+        - sleep 15
         - echo "done aem"
 
     maven:
