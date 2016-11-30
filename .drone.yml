@@ -35,7 +35,7 @@ pipeline:
 services:
     author:
         image: 598240822331.dkr.ecr.us-east-1.amazonaws.com/aem-develop:6.1-jdk7-xcqb3.0.97
-    when:
-        branch: [ develop, master ]
+        when:
+            branch: [ develop, master ]
 
 
